@@ -1,0 +1,9 @@
+.layout-managerial .layout-managerial__wrapper .header__nav {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.layout-managerial .layout-managerial__wrapper .header__content {
+  margin-top: 52px;
+}

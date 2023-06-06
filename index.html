@@ -4,7 +4,435 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://quantum.sevima.com/assets/stylesheets/css/main.css" />
     <title>Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <div class="layout-managerial">
+      <!-- Sidebar Managerial -->
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <div class="header__main">
+            <a href="/">
+              <!-- [START] Versi logo only -->
+              <!-- <div class="header__logo-full"> -->
+              <div style="width: 10rem; margin: auto">
+                <img class="logo__full" src="/assets/images/logo-quantum.png" />
+              </div>
+              <!-- </div> -->
+              <!-- [END] Versi logo only -->
+            </a>
+            <button class="sidebar__toggle">
+              <span class="icon icon-arrows-right-left"> </span>
+            </button>
+          </div>
+        </div>
+        <nav class="nav">
+          <div class="nav__wrapper">
+            <ul class="nav__items-wrapper">
+              <h4 class="nav__title">Documentation</h4>
+              <li class="nav__item active">
+                <a href="/pages/index.html" class="nav__item-action">
+                  <div class="item__titles-wrapper">
+                    <span class="icon icon_default icon-book-open"></span>
+                    <span class="icon icon_active icon-book-open-solid"></span>
+                    <p class="item__title">Getting Started</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav__item">
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__toggle">
+                    <div class="toggle__titles-wrapper">
+                      <span class="icon icon_default icon-cube-transparent"></span>
+                      <span class="icon icon_active icon-cube-transparent-solid"></span>
+                      <p>Base</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu__float-wrapper">
+                    <ul class="dropdown-menu__items-wrapper">
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/base/grid.html">Grid</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/base/icon.html">Icon</a>
+                      </li>
+                      <!-- <li class="dropdown-menu__item">
+                                            <a href="/pages/base/flag.html">Flag</a>
+                                        </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__toggle">
+                    <div class="toggle__titles-wrapper">
+                      <span class="icon icon_default icon-rectangle-group"></span>
+                      <span class="icon icon_active icon-rectangle-group-solid"></span>
+                      <p>Components</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu__float-wrapper">
+                    <ul class="dropdown-menu__items-wrapper">
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/alert.html">Alert</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/avatar.html">Avatar</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/badges.html">Badges</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/breadcrumb.html">Breadcrumb</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/buttons.html">Button</a>
+                      </li>
+                      <!-- <li class="dropdown-menu__item">
+                                            <a href="/pages/components/button-group.html">Button Group</a>
+                                        </li> -->
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/card.html">Card</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/dropdown-action.html">Dropdown Action</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/link.html">Link</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/loader.html">Loader</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/modal.html">Modal</a>
+                      </li>
+                      <!-- <li class="dropdown-menu__item">
+                                            <a href="/pages/components/off-canvas.html">Off Canvas</a>
+                                        </li> -->
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/pagination.html">Pagination</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/progress.html">Progress</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/tabs.html">Tabs</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/components/tooltip.html">Tooltips</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__toggle">
+                    <div class="toggle__titles-wrapper">
+                      <span class="icon icon_default icon-document-text"></span>
+                      <span class="icon icon_active icon-document-text-solid"></span>
+                      <p>Form</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu__float-wrapper">
+                    <ul class="dropdown-menu__items-wrapper">
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/forms/control.html">Controls</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/forms/dropdown.html">Dropdown</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/forms/file.html">Files</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/forms/input.html">Input</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/forms/select.html">Select</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/forms/range.html">Range</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-action" href="/pages/chart.html">
+                  <div class="item__titles-wrapper">
+                    <span class="icon icon_default icon-chart-pie"></span>
+                    <span class="icon icon_active icon-chart-pie-solid"></span>
+                    <p class="item__title">Chart</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-action" href="/pages/table.html">
+                  <div class="item__titles-wrapper">
+                    <span class="icon icon_default icon-table-cells"></span>
+                    <span class="icon icon_active icon-table-cells-solid"></span>
+                    <p class="item__title">Table</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav__items-wrapper">
+              <h4 class="nav__title">Example Layouts</h4>
+              <li class="nav__item">
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__toggle">
+                    <div class="toggle__titles-wrapper">
+                      <span class="icon icon_default icon-document-plus"></span>
+                      <span class="icon icon_active icon-document-plus-solid"></span>
+                      <p>Managerial</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu__float-wrapper">
+                    <ul class="dropdown-menu__items-wrapper">
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/examples/managerial/table.html">Layout Table</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/examples/managerial/detail.html">Layout Data Detail</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/examples/managerial/form.html">Layout Form</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__toggle">
+                    <div class="toggle__titles-wrapper">
+                      <span class="icon icon_default icon-document-chart-bar"></span>
+                      <span class="icon icon_active icon-document-chart-bar-solid"></span>
+                      <p>Non Managerial</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu__float-wrapper">
+                    <ul class="dropdown-menu__items-wrapper">
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/examples/non-managerial/table.html">Layout Table</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/examples/non-managerial/detail.html">Layout Data Detail</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/examples/non-managerial/form.html">Layout Form</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__toggle">
+                    <div class="toggle__titles-wrapper">
+                      <span class="icon icon_default icon-document"></span>
+                      <span class="icon icon_active icon-document-solid"></span>
+                      <p>General User</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu__float-wrapper">
+                    <ul class="dropdown-menu__items-wrapper">
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/layouts/login.html">Layout Login</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/layouts/register.html">Layout Register</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/layouts/email-verify.html">Email Verification</a>
+                      </li>
+                      <li class="dropdown-menu__item">
+                        <a href="/pages/layouts/handler.html">Layout Error Handling</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="sidebar__footer">
+          <ul class="nav__items-wrapper">
+            <li class="nav__item">
+              <div class="dropdown-action">
+                <button class="nav__item-action" data-toggle="dropdown" aria-expanded="false">
+                  <div class="item__titles-wrapper">
+                    <span class="icon icon_default icon-bars-3"></span>
+                    <span class="icon icon_active icon-bars-3-solid"></span>
+                    <p class="item__title">Lainnya</p>
+                  </div>
+                </button>
+                <div class="dropdown-action__list">
+                  <div class="dropdown-action__item">
+                    <a href="#">
+                      <span class="icon icon-cog-6-tooth"></span>
+                      Pengaturan
+                    </a>
+                  </div>
+                  <div class="dropdown-action__item">
+                    <button>
+                      <span class="icon icon-language-mini"></span>
+                      Bahasa Indonesia
+                    </button>
+                  </div>
+                  <hr />
+                  <div class="dropdown-action__item">
+                    <button>
+                      <span class="icon icon-arrow-right-on-rectangle-mini"></span>
+                      Keluar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Content Managerial -->
+      <div class="layout-managerial__wrapper">
+        <!-- Header Managerial -->
+        <header class="header">
+          <div class="header__nav">
+            <a class="link" href="/">
+              <span class="icon icon-chevron-left-mini"></span>
+              <p>Kembali<span class="link__text-desktop"> ke halaman sebelumnya</span></p>
+            </a>
+            <ol class="breadcrumb">
+              <li class="breadcrumb__item">
+                <a href="/">Home</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="/pages/index.html">Docs</a>
+              </li>
+              <li class="breadcrumb__item active">Tabs</li>
+            </ol>
+          </div>
+          <div class="header__content">
+            <div class="wrap-text">
+              <h1 class="title">Getting Started</h1>
+              <p class="subtitle">Installation to start using design system Quantum</p>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main Managerial -->
+        <main>
+          <div class="container">
+            <div class="card documentation">
+              <div class="title-documentation">
+                <h3>Quick Start</h3>
+                <p>Mulai dengan memasukkan CSS dan JavaScript siap-pakai Quantum tanpa memerlukan langkah-langkah pembuatan apa pun.</p>
+              </div>
+
+              <ol class="content-instalation">
+                <li>
+                  <b>Sertakan file css Quantum</b> Sertakan juga tag &lt;meta name="viewport"&gt; untuk perilaku responsif yang tepat di perangkat seluler
+                  <div class="code-snippet">
+                    <div class="code-script block">
+                      <div class="block__content">
+                        <pre>
+                                                <code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+    &lt;title&gt;Quantum Demo&lt;/title&gt;
+
+    &lt;link href=&quot;http://quantum.sevima.com/assets/stylesheets/css/main.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+&lt;/body&gt;
+&lt;/html&gt;</code>
+                                            </pre>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <b>Sertakan JS Quantum</b>
+                  <pre>Berikut seluruh JS yang bisa dipakai di versi ini:</pre>
+
+                  <div class="code-snippet">
+                    <div class="code-script block">
+                      <div class="block__content">
+                        <pre>
+<code class="language-html">&lt;!-- [START] core script --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/jquery/jquery-3.6.1.min.js&quot;&gt;&lt;/script&gt; &lt;!-- JQuery hanya untuk sementara ini --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/core/app.js&quot;&gt;&lt;/script&gt;
+&lt;!-- [END] core script --&gt;
+
+&lt;!--[START] All script src--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/alert.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/avatar.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/collapse.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/dropdown-action.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/dropdown-menu.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/dropdown.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/modal.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/module.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/offcanvas.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/pagination.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/progress.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/tooltip.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/forms.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/slider.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/table.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://quantum.sevima.com/assets/js/tabs.js&quot;&gt;&lt;/script&gt;
+&lt;!--[END] All script src--&gt;</code>
+                                            </pre>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </main>
+
+        <!-- Footer Managerial -->
+        <footer class="footer">
+          <p>&copy; 2023 <b>&nbsp;SEVIMA&nbsp;</b> All Right Reserved, Powered by <b>&nbsp;SEVIMA Platform</b></p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- [START] core script -->
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/jquery/jquery-3.6.1.min.js"></script>
+    <!-- JQuery hanya untuk sementara ini -->
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/core/app.js"></script>
+    <!-- [END] core script -->
+
+    <!--[START] All script src-->
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/alert.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/avatar.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/collapse.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/dropdown-action.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/dropdown-menu.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/dropdown.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/modal.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/module.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/offcanvas.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/pagination.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/progress.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/tooltip.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/forms.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/slider.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/table.js"></script>
+    <script type="text/javascript" src="https://quantum.sevima.com/assets/js/tabs.js"></script>
+    <!--[END] All script src-->
+  </body>
 </html>
